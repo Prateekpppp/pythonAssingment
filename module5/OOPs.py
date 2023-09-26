@@ -90,10 +90,10 @@ class Account :
         return self.balance
     
     def deposit(self,amount):
-        self.balance += amount
+        self.balance = self.balance+amount
         
     def withdrawal(self,amount):
-        self.balance -= amount
+        self.balance = self.balance-amount
         
     
 class SavingsAccount(Account):
@@ -112,5 +112,8 @@ class SavingsAccount(Account):
 
 obj = SavingsAccount("Ashish", 5000, 5)
 
+obj.deposit(500)
+obj.withdrawal(100)
+print(obj.getBalance())
 print(obj.interestAmount())
 
