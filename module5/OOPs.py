@@ -90,10 +90,10 @@ class Account :
         return self.balance
     
     def deposit(self,amount):
-        self.balance = self.balance+amount
+        self.balance += amount
         
     def withdrawal(self,amount):
-        self.balance = self.balance-amount
+        self.balance -= amount
         
     
 class SavingsAccount(Account):
