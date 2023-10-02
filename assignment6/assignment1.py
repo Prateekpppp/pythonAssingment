@@ -1,6 +1,7 @@
 import os
 import json
 
+print('by mistake I have send the wrong json and Oops assignment in food ordering app, so please revert or consider this for respective assignment')
 dir = os.getcwd()
 lst = []
 with open(dir+'/assignment6/employees.json') as file:
