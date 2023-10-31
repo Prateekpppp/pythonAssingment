@@ -1,0 +1,9 @@
+def conf(s):
+    try:
+        num = int(s)
+        print('success')
+    except TypeError:
+        print('failed')
+        num =-1
+l = [1,2,3]
+conf(l)
